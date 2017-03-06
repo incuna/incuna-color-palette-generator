@@ -1,0 +1,89 @@
+$base-color: #805959
+
+*
+    box-sizing: border-box
+
+html
+
+body
+    // background: #ebece7
+    background: #ffffff;
+    height: 100vh
+    width: 80vw
+    margin: auto
+
+.chosen-preview
+    padding: 10px
+
+.colorpicker
+    border: none
+    margin: 0
+        bottom: 20px
+    padding: 5px 
+
+#color
+    display: block !important
+
+.colorpicker-wrapper
+    .jQWCP-slider-wrapper
+        display: inline-block
+        float: none
+
+        // &.jQWCP-wVal
+        //     margin-left: 20px
+
+    .cp
+        display: block
+        height: auto
+        padding: 40px
+        width: 100% !important
+
+.palette
+    display: block
+    margin: auto
+        bottom: 40px
+    padding: 0
+
+    .hex
+        font-size: 14px
+        padding: 10px
+        text-align: center
+
+    li
+        border: 1px solid white
+        display: inline-block
+        width: 90px
+        height: 110px
+
+        &:nth-child(1)
+            background: lighten($base-color, 45)
+
+        &:nth-child(2)
+            background: lighten($base-color, 40)
+
+        &:nth-child(3)
+            background: lighten($base-color, 35)
+
+        &:nth-child(4)
+            background: lighten($base-color, 30)
+
+        &:nth-child(5)
+            background: lighten($base-color, 20)
+
+        &:nth-child(6)
+            background: lighten($base-color, 10)
+
+        &:nth-child(7)
+            background: $base-color
+
+        &:nth-child(8)
+            background: darken($base-color, 10)
+
+        &:nth-child(9)
+            background: darken($base-color, 20)
+
+        &:nth-child(10)
+            background: darken($base-color, 30)
+
+        &:nth-child(11)
+            background: darken($base-color, 40)
